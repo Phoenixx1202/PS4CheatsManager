@@ -97,6 +97,10 @@ jobs:
         version: ${{ env.llvm_ver }}
         cached: ${{ steps.cache-llvm.outputs.cache-hit }}
 
+    - name: Install OpenSSL Development Libraries
+      run: apt-get update
+           apt-get install -y libssl-dev        
+
     - name: Install zlib
       working-directory: oosdk_libraries/zlib_partial
       run: make install
