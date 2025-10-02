@@ -1,5 +1,5 @@
 # Package metadata.
-TITLE       := PS4 Cheats Manager
+TITLE       := PS4 Cheats Manager PT-BR
 VERSION     := 01.22
 TITLE_ID    := CHTM00777
 CONTENT_ID  := IV0000-CHTM00777_00-PS4CHEATSMANAGER

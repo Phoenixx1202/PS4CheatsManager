@@ -21,6 +21,7 @@ const char *menu_about_strings[] = {
 									"", "",
 									"PS3", "credits",
 									"Dnawrkshp (Artemis)", "Berion (GUI design)",
+									"Traducao", "Phoenixx1202",
 									NULL };
 
 /***********************************************************************
@@ -97,7 +98,7 @@ void Draw_AboutMenu_Ani(void)
 		SDL_RenderClear(renderer);
 		DrawBackground2D(0xFFFFFFFF);
 
-		DrawHeader_Ani(header_ico_abt_png_index, "About", "v" CHEATSMGR_VERSION, APP_FONT_TITLE_COLOR, 0xffffffff, ani, 12);
+		DrawHeader_Ani(header_ico_abt_png_index, "Sobre", "v" CHEATSMGR_VERSION, APP_FONT_TITLE_COLOR, 0xffffffff, ani, 12);
 
 		//------------- About Menu Contents
 		u8 icon_a = (u8)(((ani * 2) > 0xFF) ? 0xFF : (ani * 2));
@@ -120,6 +121,6 @@ void Draw_AboutMenu(int ll)
 	if (ll)
 		return(_draw_LeonLuna());
 
-	DrawHeader(header_ico_abt_png_index, 0, "About", "v" CHEATSMGR_VERSION, APP_FONT_TITLE_COLOR | 0xFF, 0xffffffff, 0);
+	DrawHeader(header_ico_abt_png_index, 0, "Sobre", "v" CHEATSMGR_VERSION, APP_FONT_TITLE_COLOR | 0xFF, 0xffffffff, 0);
 	_draw_AboutMenu(0xFF);
 }

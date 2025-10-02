@@ -15,7 +15,7 @@
 
 #define ORBIS_USER_SERVICE_USER_ID_INVALID	-1
 
-static char * sort_opt[] = {"Disabled", "by Name", "by Title ID", NULL};
+static char * sort_opt[] = {"Desabilitado", "Por Nome", "Pelo ID do Título", NULL};
 
 static void log_callback(int sel);
 static void music_callback(int sel);
@@ -28,61 +28,61 @@ static void set_pluginsperms_callback(int sel);
 static void change_url_callback(int sel);
 
 menu_option_t menu_options[] = {
-	{ .name = "Background Music", 
+	{ .name = "Música de Fundo", 
 		.options = NULL, 
 		.type = APP_OPTION_BOOL, 
 		.value = &gcm_config.music, 
 		.callback = music_callback 
 	},
-	{ .name = "Sort Games", 
+	{ .name = "Ordenar Jogos", 
 		.options = sort_opt,
 		.type = APP_OPTION_LIST,
 		.value = &gcm_config.doSort, 
 		.callback = sort_callback 
 	},
-	{ .name = "Menu Animations", 
+	{ .name = "Animações do Menu", 
 		.options = NULL, 
 		.type = APP_OPTION_BOOL, 
 		.value = &gcm_config.doAni, 
 		.callback = ani_callback 
 	},
-	{ .name = "Version Update Check", 
+	{ .name = "Checar Atualização", 
 		.options = NULL, 
 		.type = APP_OPTION_BOOL, 
 		.value = &gcm_config.update, 
 		.callback = update_callback 
 	},
-	{ .name = "Overwrite Files on Update", 
+	{ .name = "Substituir Arquivos na Atualização", 
 		.options = NULL,
 		.type = APP_OPTION_BOOL,
 		.value = &gcm_config.overwrite,
 		.callback = overwrite_callback
 	},
-	{ .name = "Change Update Download URLs",
+	{ .name = "Alterar URLs de Download da Atualização",
 		.options = NULL,
 		.type = APP_OPTION_CALL,
 		.value = NULL,
 		.callback = change_url_callback 
 	},
-	{ .name = "\nClear Temp Folder", 
+	{ .name = "\nLimpar Pasta Temporária", 
 		.options = NULL, 
 		.type = APP_OPTION_CALL, 
 		.value = NULL, 
 		.callback = clearcache_callback 
 	},
-	{ .name = "Clear Patch Settings Folder", 
+	{ .name = "Limpar Pasta de Configurações de Patch", 
 		.options = NULL, 
 		.type = APP_OPTION_CALL, 
 		.value = NULL, 
 		.callback = clearpatch_callback
 	},
-	{ .name = "Set file permissions for Plugins",
+	{ .name = "Definir Permissões de Arquivo para Plugins",
 		.options = NULL,
 		.type = APP_OPTION_CALL,
 		.value = NULL,
 		.callback = set_pluginsperms_callback
 	},
-	{ .name = "Enable Debug Log",
+	{ .name = "Habilitar Log de Depuração",
 		.options = NULL,
 		.type = APP_OPTION_CALL,
 		.value = NULL,

@@ -251,22 +251,22 @@ static void drawJars(uint8_t alpha)
 	DrawStringMono(SCREEN_WIDTH/2, 450, "PlayStation 4 Cheats Manager");
 
 	//User Backup
-	drawJar(titlescr_ico_xmb_png_index, 400, 600, (alpha == 0xFF ? "Update" : ""), alpha);
+	drawJar(titlescr_ico_xmb_png_index, 400, 600, (alpha == 0xFF ? "Atualizar" : ""), alpha);
 
 	//HDD cheats
-	drawJar(titlescr_ico_cht_png_index, 600, 600, (alpha == 0xFF ? "Cheats" : ""), alpha);
+	drawJar(titlescr_ico_cht_png_index, 600, 600, (alpha == 0xFF ? "Trapaças" : ""), alpha);
 
 	//HDD patches
-	drawJar(titlescr_ico_pat_png_index, 800, 600, (alpha == 0xFF ? "Patches" : ""), alpha);
+	drawJar(titlescr_ico_pat_png_index, 800, 600, (alpha == 0xFF ? "Correções" : ""), alpha);
 
 	//Online cheats
 	drawJar(titlescr_ico_net_png_index, 1000, 600, (alpha == 0xFF ? "Online DB" : ""), alpha);
 
 	//Options
-	drawJar(titlescr_ico_opt_png_index, 1200, 600, (alpha == 0xFF ? "Settings" : ""), alpha);
+	drawJar(titlescr_ico_opt_png_index, 1200, 600, (alpha == 0xFF ? "Ajustes " : ""), alpha);
 
 	//About
-	drawJar(titlescr_ico_abt_png_index, 1400, 600, (alpha == 0xFF ? "About" : ""), alpha);
+	drawJar(titlescr_ico_abt_png_index, 1400, 600, (alpha == 0xFF ? "Sobre" : ""), alpha);
 
 	SetFontAlign(FONT_ALIGN_LEFT);
 }

@@ -123,26 +123,26 @@ static const char* get_button_prompts(int menu_id)
 		case MENU_PATCH_VIEW:
 		case MENU_CREDITS:
 		case MENU_SAVE_DETAILS:
-			prompt = "\x13 Back";
+			prompt = "\x13 Voltar";
 			break;
 
 		case MENU_SETTINGS:
 		case MENU_CODE_OPTIONS:
-			prompt = "\x10 Select    \x13 Back";
+			prompt = "\x10 Selecionar    \x13 Voltar";
 			break;
 
 		case MENU_UPDATE_CHEATS:
-			prompt = "\x10 Select    \x13 Back    \x11 Refresh";
+			prompt = "\x10 Selecionar    \x13 Voltar    \x11 Atualizar";
 			break;
 
 		case MENU_HDD_CHEATS:
 		case MENU_HDD_PATCHES:
 		case MENU_ONLINE_DB:
-			prompt = "\x10 Select    \x13 Back    \x12 Filter    \x11 Refresh";
+			prompt = "\x10 Selecionar    \x13 Voltar    \x12 Filter    \x11 Atualizar";
 			break;
 
 		case MENU_PATCHES:
-			prompt = "\x10 Select    \x12 View Code    \x13 Back";
+			prompt = "\x10 Selecionar    \x12 Ver código    \x13 Voltar";
 			break;
 
 		case MENU_MAIN_SCREEN:
