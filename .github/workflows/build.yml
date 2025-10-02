@@ -99,8 +99,9 @@ jobs:
 
     - name: Install OpenSSL Development Libraries
       run: |
-          sudo apt-get update
-          sudo apt-get install -y libssl-dev     
+          echo "Instalando dependências legacy do OpenSSL 1.1..."
+          wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb -O libssl1.1.deb
+          sudo dpkg -i libssl1.1.deb
 
     - name: Install zlib
       working-directory: oosdk_libraries/zlib_partial
